@@ -48,19 +48,15 @@ class Person:
             return calories
 
     def calculate_ideal_weight(self):
-        # for ideal weight::::
-        # diff from male and female
-        # https://pubs.asahq.org/anesthesiology/article/127/1/203/18747/Calculating-Ideal-Body-Weight-Keep-It-Simple
-        # that site gave an optional method
-        gender = input("are you male or female? ")
-        if gender.lower() == 'male' or gender.lower() == 'm':
-        #using lorentz formula
-            ideal_weight = self.height - 100 - ((self.height - 150)/4) #note, height is in cm
-            #heigh now in metres
-            return ideal_weight
-        if gender.lower() == 'female' or gender.lower() == 'f':
-            ideal_weight = self.height - 100 - ((self.height - 150)/4)
-            return ideal_weight
+        #https://www.gigacalculator.com/calculators/ideal-weight-calculator.php
+        #https://www.semanticscholar.org/paper/Universal-equation-for-estimating-ideal-body-weight-Peterson-Thomas/8613f2d265d9f314b7be312f27792961daa263a8/figure/3
+
+        #using peterson formula. No need for gender
+        BMI = self.weight / ((self.height)**2)
+        ideal_weight = 2.2 * BMI + 3.5 * BMI * (self.height - 1.5 )
+        #agrees with this site:
+        # https://www.gigacalculator.com/calculators/ideal-weight-calculator.php
+        return ideal_weight
 
     def healthy_weigh(self):
         bmi = self.weight / (self.height)**2 #weight in kg, height in metre

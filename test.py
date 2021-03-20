@@ -8,8 +8,9 @@ bola.age = 19
 
 #print(bola.calculate_BMI())
 #print(bola.calculate_calories()) #khvmv,v
-print(bola.healthy_weigh())
-#print(bola.calculate_ideal_weight()) #ljkgljlk
+
+#print(bola.healthy_weigh())
+#print(bola.calculate_ideal_weight())
 
 me = ATM()
 me.check_balance()
