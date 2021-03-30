@@ -1,4 +1,6 @@
-
+#ATM CLASS
+#default amount== 1k
+#methods: withdraw, add money, check balance
 class ATM:
     def __init__(self, cash = 1000):
         self.cash = cash

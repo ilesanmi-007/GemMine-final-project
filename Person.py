@@ -1,6 +1,4 @@
-#ATM CLASS
-#default amount== 1k
-#methods: withdraw, add money, check balance
+
 
 class Person:
     def __init__(self,age = 0, weight = 0,height = 0): #, calculate_BMI):
@@ -33,17 +31,19 @@ class Person:
 
     def calculate_calories(self):
         #to calculate calories::::
-#formular: BMR * 1.375
-# remember i should be able to state excessiveness or less
-#where bmr == basal metabolic rate === (diff from male and female)
-#saved on desktop ---- bmr.jpg
+    #formular: BMR * 1.375
+        #https://isolatorfitness.com/blogs/iso/basal-metabolic-rate-calculator-what-does-it-mean
+    #where bmr == basal metabolic rate === (diff from male and female)
+    #saved on desktop ---- bmr.jpg
+
+        #using mifflin st. jeor equation
         gender = input("are you male or female? ")
         if gender.lower() == 'male' or gender.lower() == 'm':
-            bmr = (13.75 * self.weight) + (5 * self.height) - (6.76 * self.age) + 66
+            bmr = (10 * self.weight) + (0.625 * self.height) - (5 * self.age) + 5
             calories = bmr * 1.375
             return calories
         if gender.lower() == 'female' or gender.lower() == 'f':
-            bmr = (9.56 *self.weight) + (1.85 * self.height) - (4.68 * self.age) + 655
+            bmr = (10 * self.weight) + (0.625 * self.height) - (5 * self.age) - 161
             calories = bmr * 1.375
             return calories
 
