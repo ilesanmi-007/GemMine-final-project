@@ -1,5 +1,5 @@
 # GemMine-final-project
-this is gemMine final project
+This is gemMine final project
 
 $the person class:
 
@@ -18,6 +18,11 @@ For ideal weight, i used peterson formula which doesmt require gender.
 https://www.gigacalculator.com/calculators/ideal-weight-calculator.php
 
 for healthy weight, this calculates and return a statement telling weight condition
+
+
+INSTALLATION
+
+$$ it require to installation
 
 ----------------------------------------------------------
 ----------------------------------------------------------
